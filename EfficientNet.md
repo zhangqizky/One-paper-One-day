@@ -1,0 +1,2 @@
+efficientNet主要是对网络的scaling做了统一的规范，以及做了solid的实验，在depth，width和resolution
+三个维度上对网络进行scaling，并且探索三个维度之间trade-off，以此获得最好的分类效果。
