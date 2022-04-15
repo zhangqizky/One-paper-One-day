@@ -1,2 +1,10 @@
 efficientNet主要是对网络的scaling做了统一的规范，以及做了solid的实验，在depth，width和resolution
 三个维度上对网络进行scaling，并且探索三个维度之间trade-off，以此获得最好的分类效果。
+
+主要的贡献在于，之前没有相关的工作探索三个变量之间的关系，有探索depth和width了，但是其实depth和resolution之间的关系很大，更大的depth需要更大的resolution来支撑。
+
+
+定下alpha，beta和gama三个常量，在用一个超参fi去统一的规范这三个变量。让整个调节比较简单，不需要手动的调很多参数。
+
+
+实验证明单独调depth，width，resolution的话，很快就饱和了，如果联合depth和resolution一起调，会提升的更多。
